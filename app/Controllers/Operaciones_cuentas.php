@@ -7,6 +7,15 @@ use App\Models\Operacion;
 
 class Operaciones_cuentas extends Controller{
 
+    public function mostrar_cuentas(){
+
+        $model = new Cuenta();
+        $datos['cuentas'] = $model->orderBy('id','ASC')->findAll();
+
+        return view('operaciones/datos_cuenta',$datos);
+    }
+
+
     public function add_cuenta(){
 
         $model = new Operacion();
