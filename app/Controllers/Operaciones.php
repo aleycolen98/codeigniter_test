@@ -12,7 +12,7 @@ class Operaciones extends Controller{
   
     }
     
-    public function mostrar_datos(){
+    public function mostrar_datos_cuentas(){
 
         $model = new Operacion();
         $datos['clientes'] = $model->orderBy('id','ASC')->findAll();

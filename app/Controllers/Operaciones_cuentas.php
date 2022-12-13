@@ -9,10 +9,10 @@ class Operaciones_cuentas extends Controller{
 
     public function mostrar_cuentas(){
 
-        $model = new Cuenta();
-        $datos['cuentas'] = $model->orderBy('id','ASC')->findAll();
+        $model2 = new Cuenta();
+        $datos2['cuentas'] = $model2->orderBy('id','ASC')->findAll();
 
-        return view('operaciones/datos_cuenta',$datos);
+        return view('operaciones/datos_cuenta',$datos2);
     }
 
 
