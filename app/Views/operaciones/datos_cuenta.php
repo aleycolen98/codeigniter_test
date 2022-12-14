@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($cuentas as $cuenta):?>
+                <?php foreach($datos2 as $cuenta):?>
                 <tr class="">
                     <td><?=$cuenta['numero_cuenta']?></td>
                     <td><?=$cuenta['tipo_cuenta']?></td>
