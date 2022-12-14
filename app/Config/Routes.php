@@ -57,8 +57,8 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 $routes->get('addcliente', 'Operaciones::index');
 $routes->get('clientes','Operaciones::mostrar_datos');
 $routes->post('addcliente', 'Operaciones::insert');
+$routes->get('vercuentas','Operaciones_cuentas::mostrar_cuentas');
 $routes->get('addcuenta','Operaciones_cuentas::add_cuenta');
 $routes->post('addcuenta','Operaciones_cuentas::guardar_cuenta_en_db');
 $routes->get('addcredito','Operaciones_creditos::mostrar_form_creditos');
 $routes->post('addcredito','Operaciones_creditos::guardar_credito_endb');
-$routes->get('vercuentas','Operaciones_cuentas::mostrar_datos_cuentas');
