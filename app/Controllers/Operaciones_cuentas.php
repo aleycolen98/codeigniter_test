@@ -13,6 +13,7 @@ class Operaciones_cuentas extends Controller{
         $datos2['cuentas'] = $model2->orderBy('id','ASC')->findAll();
 
         return view('operaciones/datos_cuenta' ,$datos2);
+        
     }
 
 
